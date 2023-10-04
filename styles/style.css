@@ -105,15 +105,19 @@ fieldset {
   /* padding: 10px; */
   width: 225px;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255);
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   outline: none;
 }
 
-.search-form__textfield:active{
+.search-form__textfield:active {
   color: rgba(255, 255, 255);
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -164,6 +168,7 @@ fieldset {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .more-button {
@@ -172,15 +177,15 @@ fieldset {
   outline: none;
 }
 
-.more-button:hover{
+.more-button:hover {
   text-decoration: underline;
 }
 
-.more-button:active{
+.more-button:active {
   background-color: #545050;
 }
 
-.more-button:focus{
+.more-button:focus {
   outline: 1px solid #fff;
 }
 
@@ -224,17 +229,6 @@ fieldset {
   line-height: 94%;
   text-transform: uppercase;
 }
-
-/* 
-.search-form__fieldset-title{
-  color: #FFF;
-  font-family: Oswald;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  text-transform: uppercase;
-} */
 
 .content__card-link {
   text-decoration: none;
